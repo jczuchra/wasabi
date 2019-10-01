@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import FrontPageContainer from './screens/FrontPageContainer';
+import BandsContainer from './screens/BandsContainer';
+import LoadingContainer from './screens/LoadingContainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/newgame' component={BandsContainer} />
+        <Route path='/loading/:image' component={LoadingContainer} />
+        <Route component={FrontPageContainer} />
+      </Switch>
+    </Router>
   );
 }
 
