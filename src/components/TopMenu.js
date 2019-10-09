@@ -18,9 +18,8 @@ const useStyles = makeStyles({
     header: {
         color: 'white',
         textTransform: 'uppercase',
-        fontFamily: '"Anton", sans-serif',
-        fontSize: '150px',
-        letterSpacing: '10px',
+        fontSize: '170px',
+        transform: 'scale(1,2)',
     },
     headerButtonsContainer: {
         height: '80vh',

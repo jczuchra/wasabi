@@ -1,11 +1,21 @@
+/* @font-face {
+    font-family: 'retro_gamingregular';
+    src: url('../font/retro_gaming-webfont.woff2') format('woff2'),
+         url('../font/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'retro_gamingregular' !important;
     cursor: url('./pointer.png'), auto !important;
 }
 body {
     overflow: hidden;
+    font-family: 'retro_gamingregular';
 }
 a {
     text-decoration: none;
